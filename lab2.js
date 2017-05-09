@@ -1,3 +1,4 @@
+//Sort the array
 const sorter = (arrayPassed)=> {
   var swapNum;
   var swapCounter;
@@ -15,6 +16,7 @@ const sorter = (arrayPassed)=> {
   return arrayPassed; 
 }
 
+//Find the minimum and maximum elements
 const findMinMax = (array) =>
 {
     sorter(array);
