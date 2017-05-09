@@ -1,6 +1,7 @@
  
+  
  
- const livingThing = function  (typeOfOrganism)
+ let livingThing = function  (typeOfOrganism)
  {
      this.typeOfOrganism = typeOfOrganism;
  }
@@ -18,35 +19,26 @@
      console.log("I have just eaten " + food);
  }
 
- const plant = function (typeOfPlant)
+ let plant = function (typeOfPlant)
  {
     this.typeOfPlant = typeOfPlant;
  } 
 
-let herbObject = new plant("Herbs");
-let treeObject = new plant("Trees");
-let shrubObject = new plant("Shrubs");
+
  
-const herb = function (typeOfherb)
+let animal = function (typeOfanimal)
  {
-    this.typeOfherb = typeOfherb;
+    this.typeOfanimal = typeOfanimal;
  } 
 
-const tree = function (typeOfTree)
- {
-    this.typeOfTree = typeOfTree;
- } 
 
-const shrub = function (typeOfherb)
- {
-    this.typeOfherb = typeOfherb;
- } 
 
 plant.prototype = plantObject;
-herb.prototype = herbObject;
-tree.prototype = treeObject;
-shrub.prototype = shrubObject;
+animal.prototype = animalObject;
 
-const CoconutTree1 = new tree("Coconut");
-console.log(CoconutTree1 instanceof plant);
-//CoconutTree1.eat("Soil nutrient");
+
+let CoconutTree1 = new plant("Coconut");
+CoconutTree1.eat("Soil nutrient");
+
+let Lion1 = new animal("Lion");
+Lion1.eat("a cobra");
