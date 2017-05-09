@@ -25,5 +25,9 @@ const findMinMax = (array) =>
     return minMaxArray;
 }
 
+module.exports{
+    sorter, findMinMax
+};
+
 let a = [3,23,54,1,8];
 findMinMax(a);
